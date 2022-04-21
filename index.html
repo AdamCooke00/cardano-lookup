@@ -2,51 +2,91 @@
     <head>
         <title>Cardano Links</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
   <body>
-    <div class="container mt-3 " style="width: 300px;">
-        <h1 class="text-center">Cardano Links</h1>
-        <p>Ctrl + Shift + F will open the extension</p>
-        <h4>Developer Docs</h4>
-            <ul>
-                <li><a href="https://developers.cardano.org/" target="_blank">Developer Portal</a></li>
-                <li><a href="https://hydra.family/head-protocol/" target="_blank">Hydra Head Protocol</a></li>
-                <li><a href="https://input-output-hk.github.io/cardano-wallet/user-guide/cli" target="_blank">Cardano-Wallet Docs</a></li>
-                <li><a href="https://input-output-hk.github.io/cardano-wallet/api/edge/" target="_blank">Wallet API</a></li>
-                <li><a href="https://docs.cardano.org/explore-cardano/cardano-architecture/overview" target="_blank">Architecture</a></li>
-                <li><a href="https://playground.plutus.iohkdev.io/doc/haddock/" target="_blank">Plutus Haddock</a></li>
-                <li><a href="https://cardano.stackexchange.com/" target="_blank">Stack Exchange</a></li>           
-                <li><a href="https://docs.blockfrost.io/" target="_blank">Blockfrost</a></li>
-            </ul> 
-        <h4>Blockchain Tools</h4>
-            <ul>
-                <li><a href="https://pool.pm/" target="_blank">Pool.pm</a></li>
-                <li><a href="https://cardanoscan.io/" target="_blank">Cardanoscan</a></li>
-                <li><a href="https://cardanocataly.st/" target="_blank">Catalyst</a></li>
-            </ul>
-        <h4>Decentralized Exchanges</h4>
-            <ul>
-                <li><a href="https://app.minswap.org/" target="_blank">Minswap</a></li>
-                <li><a href="https://exchange.sundaeswap.finance" target="_blank">SundaeSwap</a></li>
-                <li><a href="https://www.wingriders.com" target="_blank">WingRiders</a></li>
-                <li><a href="https://muesliswap.com" target="_blank">MuesliSwap</a></li>
-            </ul>
-        <h4>NFTs</h4>
-            <ul>
-                <li><a href="https://www.jpg.store/" target="_blank">Jpg.Store</a></li>
-                <li><a href="https://cnft.io/" target="_blank">CNFT.io</a></li>
-            </ul>
-        <h4>Lending & Borrowing</h4>
-            <ul>
-                <li><a href="https://app.meld.com/wallet" target="_blank">Meld</a></li>
-            </ul>
-        <h4>Wallets</h4>
-            <ul>
-                <li><a href="https://ccvault.io/app/mainnet/wallet/xpub1r0nrgcyha0s-mm/summary" target="_blank">Eternl</a></li>
-                <li><a href="https://flint-wallet.com" target="_blank">Flint</a></li>
-                <li><a href="https://namiwallet.io" target="_blank">Nami</a></li>
-                <li><a href="https://yoroi-wallet.com" target="_blank">Yoroi</a></li>
-            </ul>
+    <header style=" margin: 1rem;">
+        <h1 class="uppercase fs-700 letter-spacing-3" style="text-align:center;">Cardano Links</h1>
+        <p class="fs-400" style="text-align:center;">Ctrl + Shift + F will open the extension</p>
+    </header>
+
+    <div class="flow">
+        <nav class="bg-dark">
+            <div class="container">
+                <ul class="flex primary-navigation primary-header underline-indicators">
+                    <li><a class="ff-sans-cond uppercase text-white" href="#tools">Tools</a></li>
+                    <li><a class="ff-sans-cond uppercase text-white" href="#dexs">DEXs</a></li>
+                    <li><a class="ff-sans-cond uppercase text-white" href="#wallets">Wallets</a></li>
+                    <li><a class="ff-sans-cond uppercase text-white" href="#dev">Dev Docs</a></li>
+                </ul>
+            </div> 
+        </nav>
+
+        <div class="container flow">    
+            <article id="dev" class="flow flow--space-small">
+                <h3 class="fs-700 text-dark">Developer Docs</h3>
+                <ul class="list-navigation">
+                    <li><a href="https://developers.cardano.org/" target="_blank">Developer Portal</a></li>
+                    <li><a href="https://hydra.family/head-protocol/" target="_blank">Hydra Head Protocol</a></li>
+                    <li><a href="https://input-output-hk.github.io/cardano-wallet/user-guide/cli" target="_blank">Cardano-Wallet Docs</a></li>
+                    <li><a href="https://input-output-hk.github.io/cardano-wallet/api/edge/" target="_blank">Wallet API</a></li>
+                    <li><a href="https://docs.cardano.org/explore-cardano/cardano-architecture/overview" target="_blank">Architecture</a></li>
+                    <li><a href="https://playground.plutus.iohkdev.io/doc/haddock/" target="_blank">Plutus Haddock</a></li>
+                    <li><a href="https://cardano.stackexchange.com/" target="_blank">Stack Exchange</a></li>           
+                    <li><a href="https://docs.blockfrost.io/" target="_blank">Blockfrost</a></li>
+                </ul>
+            </article>
+            
+            <article id="tools" class="flow flow--space-small">
+                <h3 class="fs-700 text-dark">Blockchain Tools</h3>
+                <ul class="list-navigation">
+                    <li><a href="https://pool.pm/" target="_blank">Pool.pm</a></li>
+                    <li><a href="https://cardanoscan.io/" target="_blank">Cardanoscan</a></li>
+                    <li><a href="https://cardanocataly.st/" target="_blank">Catalyst</a></li>
+                </ul>
+            </article>
+
+            <article id="dexs" class="flow flow--space-small">
+                <h3 class="fs-700 text-dark">Decentralized Exchanges</h3>
+                <ul class="list-navigation">
+                    <li><a href="https://app.minswap.org/" target="_blank">Minswap</a></li>
+                    <li><a href="https://exchange.sundaeswap.finance" target="_blank">SundaeSwap</a></li>
+                    <li><a href="https://www.wingriders.com" target="_blank">WingRiders</a></li>
+                    <li><a href="https://muesliswap.com" target="_blank">MuesliSwap</a></li>
+                </ul>
+            </article>
+
+            <article class="flow flow--space-small">
+                <h3 class="fs-700 text-dark">NFTs</h3>
+                <ul class="list-navigation">
+                    <li><a href="https://www.jpg.store/" target="_blank">Jpg.Store</a></li>
+                    <li><a href="https://cnft.io/" target="_blank">CNFT.io</a></li>
+                </ul>
+            </article>
+
+            <article class="flow flow--space-small">
+                <h3 class="fs-700 text-dark">Lending & Borrowing</h3>
+                <ul class="list-navigation">
+                    <li><a href="https://app.meld.com/wallet" target="_blank">Meld</a></li>
+                </ul>
+            </article>
+
+            <article id="wallets" class="flow flow--space-small">
+                <h3 class="fs-700 text-dark">Wallets</h3>
+                <ul class="list-navigation">
+                    <li><a href="https://ccvault.io/app/mainnet/wallet/xpub1r0nrgcyha0s-mm/summary" target="_blank">Eternl</a></li>
+                    <li><a href="https://flint-wallet.com" target="_blank">Flint</a></li>
+                    <li><a href="https://namiwallet.io" target="_blank">Nami</a></li>
+                    <li><a href="https://yoroi-wallet.com" target="_blank">Yoroi</a></li>
+                </ul>
+            </article>
+        </div>
+
+        <footer class="bg-dark text-white" style="padding: 2rem; text-align: center;">
+            <a href="https://github.com/AdamCooke00/cardano-lookup" target="_blank">Cardano Lookup GitHub 2022</a>
+        </footer>
+
     </div>
+    
   </body>
 </html>
