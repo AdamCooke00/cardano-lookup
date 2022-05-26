@@ -7,7 +7,7 @@
     --clr-dark: 236, 60%, 20%;
     --clr-light: 239, 43%, 33%;
     --clr-white: 8, 79%, 66%;
-    
+
     /* font-sizes */
     --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
     --fs-800: 3.5rem;
@@ -17,7 +17,7 @@
     --fs-400: 0.9375rem;
     --fs-300: 1rem;
     --fs-200: 0.875rem;
-    
+
     /* font-families */
     --ff-serif: "Bellefair", serif;
     --ff-sans-cond: "Barlow Condensed", sans-serif;
@@ -68,7 +68,7 @@ h5,
 p,
 figure,
 picture {
-    margin: 0; 
+    margin: 0;
 }
 
 h1,
@@ -81,21 +81,22 @@ p {
     font-weight: 400;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
+
 /* set up the body */
 body {
     font-family: var(--ff-sans-normal);
     font-size: var(--fs-400);
-    color: hsl( var(--clr-light) );
-    background-color: hsl( var(--clr-white) );
+    color: hsl(var(--clr-light));
+    background-color: hsl(var(--clr-white));
     line-height: 1.5;
     min-height: 40vh;
     width: 400px;
     display: grid;
-    grid-template-rows: min-content 1fr;    
+    grid-template-rows: min-content 1fr;
     overflow-x: hidden;
 }
 
@@ -104,6 +105,15 @@ img,
 picutre {
     max-width: 100%;
     display: block;
+    transition: ease-in-out 0.3s;
+    max-height: 73px;
+}
+
+img:hover,
+img:focus {
+    transform: rotate(360deg);
+    max-width: 110%;
+    max-height: 100px;
 }
 
 /* make form elements easier to work with */
@@ -115,15 +125,16 @@ select {
 }
 
 /* remove animations for people who've turned them off */
-@media (prefers-reduced-motion: reduce) {  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 /* ------------------- */
@@ -146,7 +157,7 @@ select {
     display: block;
 }
 
-.flow > *:where(:not(:first-child)) {
+.flow>*:where(:not(:first-child)) {
     margin-top: var(--flow-space, 1rem);
 }
 
@@ -160,47 +171,105 @@ select {
 }
 
 .sr-only {
-  position: absolute; 
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px; 
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap; /* added line */
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /* added line */
+    border: 0;
 }
 
 /* colors */
 
-.bg-dark { background-color: hsl( var(--clr-dark) );}
-.bg-accent { background-color: hsl( var(--clr-light) );}
-.bg-white { background-color: hsl( var(--clr-white) );}
+.bg-dark {
+    background-color: hsl(var(--clr-dark));
+}
 
-.text-dark { color: hsl( var(--clr-dark) );}
-.text-accent { color: hsl( var(--clr-light) );}
-.text-white { color: hsl( var(--clr-white) );}
+.bg-accent {
+    background-color: hsl(var(--clr-light));
+}
+
+.bg-white {
+    background-color: hsl(var(--clr-white));
+}
+
+.text-dark {
+    color: hsl(var(--clr-dark));
+}
+
+.text-accent {
+    color: hsl(var(--clr-light));
+}
+
+.text-white {
+    color: hsl(var(--clr-white));
+}
 
 /* typography */
 
-.ff-serif { font-family: var(--ff-serif); } 
-.ff-sans-cond { font-family: var(--ff-sans-cond); } 
-.ff-sans-normal { font-family: var(--ff-sans-normal); } 
+.ff-serif {
+    font-family: var(--ff-serif);
+}
 
-.letter-spacing-1 { letter-spacing: 4.75px; } 
-.letter-spacing-2 { letter-spacing: 2.7px; } 
-.letter-spacing-3 { letter-spacing: 2.35px; } 
+.ff-sans-cond {
+    font-family: var(--ff-sans-cond);
+}
 
-.uppercase { text-transform: uppercase; }
+.ff-sans-normal {
+    font-family: var(--ff-sans-normal);
+}
 
-.fs-900 { font-size: var(--fs-900); }
-.fs-800 { font-size: var(--fs-800); }
-.fs-700 { font-size: var(--fs-700); }
-.fs-600 { font-size: var(--fs-600); }
-.fs-500 { font-size: var(--fs-500); }
-.fs-400 { font-size: var(--fs-400); }
-.fs-300 { font-size: var(--fs-300); }
-.fs-200 { font-size: var(--fs-200); }
+.letter-spacing-1 {
+    letter-spacing: 4.75px;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2.7px;
+}
+
+.letter-spacing-3 {
+    letter-spacing: 2.35px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.fs-900 {
+    font-size: var(--fs-900);
+}
+
+.fs-800 {
+    font-size: var(--fs-800);
+}
+
+.fs-700 {
+    font-size: var(--fs-700);
+}
+
+.fs-600 {
+    font-size: var(--fs-600);
+}
+
+.fs-500 {
+    font-size: var(--fs-500);
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+
+.fs-200 {
+    font-size: var(--fs-200);
+}
 
 .fs-900,
 .fs-800,
@@ -229,18 +298,24 @@ select {
     margin: 0;
 }
 
-.list-navigation{
+.list-navigation {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.list-navigation a{
+.list-navigation a {
     padding-left: 1rem;
+    width: 25%;
     text-decoration: underline;
 }
 
-.underline-indicators > * {
+.list-navigation a img {
+    border: 1px black solid;
+    border-radius: 50%;
+}
+
+.underline-indicators>* {
     cursor: pointer;
     padding: var(--underline-gap, .5rem) 0;
     border: 0;
@@ -250,6 +325,6 @@ select {
     --gap: 2rem;
 }
 
-footer a{
+footer a {
     text-decoration: underline;
 }
