@@ -109,6 +109,13 @@ picutre {
     max-height: 73px;
 }
 
+#eutxo:hover,
+#eutxo:focus {
+    max-width: 110%;
+    max-height: 100px;
+    transform: none;
+}
+
 img:hover,
 img:focus {
     transform: rotate(360deg);
